@@ -12,9 +12,9 @@ Connect-MgGraph `
     -ContextScope Process
 ```
 
-```markdown
+
 ![Figure 9 - Microsoft Graph role management permission](images/fig09.png)
-```
+
 
 ## Figure 10 — Assign a Role Through Microsoft Graph
 
@@ -36,9 +36,9 @@ New-MgRoleManagementDirectoryRoleAssignment `
     -BodyParameter $Params
 ```
 
-```markdown
+
 ![Figure 10 - Role assignment through Microsoft Graph](images/fig10.png)
-```
+
 
 ```text
 PrincipalId      = WHO
@@ -48,23 +48,23 @@ DirectoryScopeId = WHERE
 
 ## Figure 11 — Portal Verification
 
-```markdown
+
 ![Figure 11 - Helpdesk Administrator role verified in Entra ID](images/fig11.png)
-```
+
 
 ## Figure 12 — Bulk Role Assignment Script
 
 A `$RoleMap` hashtable mapped each user to one or more directory roles. The script checked whether the relationship already existed before creating it.
 
-```markdown
+
 ![Figure 12 - Bulk RBAC assignment script](images/fig12.png)
-```
+
 
 ## Figure 13 — Users Assigned Their Respective Roles
 
-```markdown
+
 ![Figure 13 - Bulk users assigned their respective Entra roles](images/fig13.png)
-```
+
 
 This demonstrates **least-privilege RBAC** rather than giving every user broad administrative access.
 
@@ -72,9 +72,9 @@ This demonstrates **least-privilege RBAC** rather than giving every user broad a
 
 Marcus was assigned **Privileged Role Administrator** through Privileged Identity Management.
 
-```markdown
+
 ![Figure 14 - Privileged Role Administrator assignment through PIM](images/fig14.png)
-```
+
 
 ### Troubleshooting — `RoleNotFound`
 
@@ -108,9 +108,8 @@ successful privileged operation
 
 A custom role named **Soc Analyst Custom role** was created and assigned to **Fatima Al-Rashid**.
 
-```markdown
+
 ![Figure 15 - SOC Analyst custom role and user assignment](images/fig15.png)
-```
 
 ### Troubleshooting — PIM Propagation
 
